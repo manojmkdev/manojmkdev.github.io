@@ -211,6 +211,17 @@ img{
   bottom: 0;
   margin-bottom: 8%;
   width: 295px;
+  object-fit: contain;
+}
+@media screen and (max-width:390px){
+  .home__img{
+    display: none;
+  }
+  .home__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 }
 .home__work{
   margin-bottom: var(--mb-5);
@@ -393,7 +404,7 @@ img{
   }
   .home__img{
     width: 457px;
-    bottom: 15%;
+    bottom: 3%;
   }
 
   .about__container, .skills__container{
@@ -403,17 +414,6 @@ img{
   }
   .about__img img{
     width: 300px;
-  }
-  .work__container{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
-    column-gap: 2rem;
-  }
-  .contact__form{
-    width: 360px;
-  }
-  .contact__container{
-    justify-items: center;
   }
 }
 
